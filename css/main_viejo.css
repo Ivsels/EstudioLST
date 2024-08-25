@@ -1,0 +1,701 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif !important;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+.navDiv {
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  position: fixed;
+  display: block;
+  width: 100%;
+  box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.9725490196);
+}
+
+.logoNav {
+  display: inline-block;
+  width: 71px;
+  height: 73px;
+  margin-left: 10px;
+}
+
+.alambre1 {
+  top: 1px;
+  left: 1px;
+  z-index: 100;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: center;
+  list-style: none;
+}
+.menu li {
+  font-weight: bold;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  align-self: center;
+}
+.menu li a {
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px 5px 5px 5px;
+  transition: 0s;
+}
+.menu li a:link {
+  color: rgba(0, 0, 0, 0.9725490196);
+}
+.menu li a:visited {
+  color: rgba(0, 0, 0, 0.9725490196);
+}
+.menu li a:hover {
+  color: orange;
+  border-bottom: 5px orange solid;
+}
+.menu li a:active {
+  color: orange;
+  border-bottom: 5px orange solid;
+}
+
+.botonAqui {
+  color: orange !important;
+  border-bottom: 5px orange solid !important;
+}
+
+.elementoMenu {
+  display: inline-block;
+}
+
+.navbar-toggler {
+  margin: 20px;
+  border: none;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.9725490196);
+  font-weight: lighter;
+}
+.footer p {
+  color: rgba(255, 255, 255, 0.9607843137);
+  font-size: 1.4em;
+}
+.footer div {
+  align-items: center;
+}
+
+.telMail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.telMail img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+.telMail p {
+  display: inline-block;
+  margin: 5px;
+}
+
+.telefono {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: initial;
+}
+
+.mail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: initial;
+}
+
+.logoFooter {
+  /*display: inline-block;*/
+  filter: invert(99%) sepia(98%) saturate(20%) hue-rotate(314deg) brightness(104%) contrast(100%);
+  width: 72px;
+  height: 71px;
+  padding-bottom: 10px;
+}
+
+.divIconos img {
+  filter: invert(99%) sepia(98%) saturate(20%) hue-rotate(314deg) brightness(104%) contrast(100%);
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+}
+.divIconos img:hover {
+  filter: invert(60%) sepia(88%) saturate(536%) hue-rotate(347deg) brightness(103%) contrast(91%);
+  width: 40px;
+  height: 40px;
+}
+
+.iconosFooter p {
+  align-content: center;
+  margin: 10px;
+}
+
+.visibleCelular {
+  visibility: visible;
+}
+
+.visiblePc {
+  visibility: hidden;
+  display: none;
+}
+
+.contenidoInicio {
+  margin-top: 110px;
+}
+
+.caribeInicio img {
+  width: 100%;
+}
+.caribeInicio video {
+  object-fit: initial;
+  width: 70%;
+  height: auto;
+}
+
+.imagenCentral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.imagenCentral p {
+  font-style: normal;
+  font-size: 0.9em;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.videoRemera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagenesIndex {
+  /*Contenedor de los divs*/
+  width: 100%;
+}
+
+.imagenIndex {
+  /* Cada uno de los 3 divs*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+  max-height: 750px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9725490196);
+}
+.imagenIndex img {
+  flex-shrink: 0;
+  opacity: 1 !important;
+  transition: 0.3s;
+  filter: grayscale(100%);
+  width: auto;
+}
+.imagenIndex img:hover {
+  opacity: 0.5 !important;
+  transition: 0.8s;
+  transform: scale(1.1);
+  filter: brightness(20%), grayscale(100%);
+}
+
+.imageCarousel {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.carousel-caption {
+  transform: translateY(-70%);
+}
+.carousel-caption h5 {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+.carousel-caption p {
+  font-size: 1.2em;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 15vw;
+  height: 15vw;
+}
+
+.contenidoTienda {
+  padding-top: 130px !important;
+  margin: 0 !important;
+}
+
+.contenedorGeneralTienda {
+  margin: 0 !important;
+}
+
+.cardTienda {
+  /* Card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px !important;
+}
+.cardTienda img {
+  opacity: 0.5;
+  min-width: 65vw;
+  max-height: 85vw;
+}
+.cardTienda img:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+.cardTienda h4,
+.cardTienda h3 {
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.cardTienda h4 {
+  text-transform: uppercase;
+}
+.cardTienda h5 {
+  padding-top: 5px;
+  font-size: 1.7em;
+}
+.cardTienda a {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: orange;
+  border: 4px solid #ff8c00;
+  color: rgba(255, 255, 255, 0.9607843137);
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px;
+  margin-left: auto;
+  text-decoration: none;
+}
+.cardTienda a:hover {
+  background-color: #ff8c00;
+  transition: 0.3s;
+}
+
+.contenidoNosotros {
+  padding-top: 120px;
+}
+.contenidoNosotros h2 {
+  font-size: 2em;
+  color: orange;
+}
+.contenidoNosotros p {
+  padding: 10px 10vw 10px 10vw;
+  font-size: 1.1em;
+}
+.contenidoNosotros img {
+  max-width: 40vw;
+  margin-left: 50vw;
+}
+
+.contenedorGeneralColecciones {
+  padding-top: 120px !important;
+}
+
+.posicionTexto {
+  top: 5%;
+  left: 5%;
+  max-width: 85vw;
+}
+
+.imagenColecciones {
+  background-color: rgba(0, 0, 0, 0.9725490196);
+  overflow: hidden;
+}
+.imagenColecciones img {
+  opacity: 1 !important;
+  transition: 0.3s;
+}
+.imagenColecciones img:hover {
+  opacity: 0.4 !important;
+  transition: 0.8s;
+  transform: scale(1.1);
+}
+
+#contenedor1:hover > #textoContendor1 {
+  visibility: visible !important;
+}
+
+#contenedor2:hover > #textoContendor2 {
+  visibility: visible !important;
+}
+
+#contenedor3:hover > #textoContendor3 {
+  visibility: visible !important;
+}
+
+#contenedor4:hover > #textoContendor4 {
+  visibility: visible !important;
+}
+
+.contenidoContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 120px;
+}
+.contenidoContacto h1 {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.contenidoContacto p {
+  margin-left: 15vw;
+  margin-right: 10vw;
+  font-size: 1.1em;
+}
+
+.formContacto {
+  list-style: none;
+}
+.formContacto li {
+  margin: 30px;
+  font-size: 1em;
+}
+.formContacto li input,
+.formContacto li textarea {
+  font-size: 16px;
+  border-width: 0px;
+  border-bottom: 2px orange solid;
+  width: 300px;
+  resize: none;
+}
+.formContacto li input:hover,
+.formContacto li textarea:hover {
+  border-bottom: 2px #ff8c00 solid;
+  transition: 0.5s;
+}
+.formContacto li textarea {
+  height: 150px;
+}
+.formContacto li textarea:focus,
+.formContacto li input:focus {
+  outline: none;
+  resize: none;
+}
+
+.botonContacto {
+  width: 300px;
+  height: 50px;
+  background-color: orange;
+  color: rgba(255, 255, 255, 0.9607843137);
+  font-size: 25px;
+  font-weight: bold;
+}
+.botonContacto:hover {
+  background-color: #ff8c00;
+  transition: 0.5s;
+}
+
+@media (min-width: 401px) {
+  /* Pantallas de celulares grandes y tables*/
+  .alambre1 {
+    height: 220px;
+    width: 220px;
+  }
+  .menu li {
+    padding-top: 10px;
+  }
+  .menu li a {
+    padding: 10px;
+  }
+  /* STYLE DEL INDEX */
+  .contenidoInicio {
+    margin-top: 100px;
+  }
+  .caribeInicio img {
+    width: 400px;
+  }
+  .caribeInicio video {
+    width: 100%;
+  }
+  .imagenCentral p {
+    font-size: 0.8em;
+  }
+  .visibleCelular {
+    visibility: hidden;
+    display: none;
+  }
+  .visiblePc {
+    visibility: visible !important;
+    display: block;
+  }
+  .imagenesIndex {
+    /*Contenedor de los divs*/
+    width: 100%;
+  }
+  .imagenIndex {
+    /* Cada uno de los 3 divs*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.9725490196);
+    max-height: 40vw;
+  }
+  .imagenIndex img {
+    flex-shrink: 0;
+    opacity: 1 !important;
+    transition: 0.3s;
+    filter: grayscale(100%);
+    width: auto;
+    height: 100%;
+  }
+  .imagenIndex img:hover {
+    opacity: 0.5 !important;
+    transition: 0.8s;
+    transform: scale(1.1);
+    filter: brightness(20%), grayscale(100%);
+  }
+  /* STYLE COLECCIONES*/
+  .posicionTexto {
+    top: 25%;
+    left: 5%;
+    max-width: 85vw;
+  }
+  /* STYLE NOSOTROS */
+  /* STYLE DE CONTACTO */
+  /* STYLE DEL FOOTER */
+  .footer p {
+    font-size: 1.2em;
+  }
+  .telMail p {
+    font-size: 1em;
+  }
+  .logoFooter {
+    align-items: center;
+  }
+  .iconosFooter p {
+    font-size: 1em;
+  }
+}
+@media (min-width: 576px) {
+  /* Acomoda mejor la tienda en pantallas que ganan ancho (responsive) */
+  .cardTienda img {
+    min-width: 35vw;
+    max-height: 50vw;
+  }
+}
+@media (min-width: 767px) {
+  /* Tables */
+  .footer div {
+    align-items: normal;
+  }
+  .logoFooter {
+    margin-left: auto;
+    padding-bottom: 0px;
+  }
+  .caribeInicio video {
+    object-fit: initial;
+    width: 70%;
+    height: auto;
+  }
+  .imagenCentral p {
+    font-size: 0.9em;
+  }
+  .textoAlMedio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  /* STYLE DE LA TIENDA*/
+  .cardTienda img {
+    min-width: 20vw;
+    max-height: 25vw;
+  }
+  /* STYLE COLECCIONES*/
+  .imagenColecciones {
+    background-color: initial;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    margin-top: 15px !important;
+  }
+  .imagenColecciones img {
+    opacity: 1 !important;
+    transition: 0.3s;
+    position: initial;
+    max-width: 50vw;
+  }
+  .imagenColecciones img:hover {
+    opacity: 1 !important;
+    transform: scale(1);
+  }
+  .imagenColecciones p,
+  .imagenColecciones h2 {
+    /* Adecua el texto de cada foto en tamaño, color y ubicacion*/
+    color: rgba(0, 0, 0, 0.9725490196);
+    position: initial;
+    font-size: 1em;
+  }
+  .imagenColecciones h2 {
+    font-size: 1.4em;
+  }
+  .posicionTexto {
+    visibility: visible !important;
+    max-width: 40vw !important;
+    top: 20%;
+    left: 5%;
+    position: normal !important;
+  }
+  .imageIzq {
+    margin-right: auto !important;
+  }
+  .imageDer {
+    margin-left: auto !important;
+  }
+  .textDer {
+    margin-left: 50vw;
+  }
+  .contenidoContacto p {
+    margin-left: 30vw;
+    margin-right: 30vw;
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 992px) {
+  /* PC y otras */
+  /* Cambia Menu del Nav de vertical a horizontal */
+  .menu {
+    display: inline-block;
+    margin-right: 600px;
+  }
+  .error404Page {
+    margin-top: 120px;
+    height: 75vh;
+  }
+  .error404Image img {
+    width: 45vw !important;
+    height: auto;
+  }
+  .error404Texto {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+@media (min-width: 1100px) {
+  /* PC y otras */
+  .footer div {
+    align-items: normal;
+  }
+  .logoFooter {
+    margin-left: auto;
+    padding-bottom: 0px;
+  }
+  .caribeInicio video {
+    object-fit: initial;
+    width: 50%;
+    height: auto;
+  }
+  .imagenCentral p {
+    font-size: 1.1em;
+  }
+  .imagenColecciones p,
+  .imagenColecciones h2 {
+    font-size: 1.2em;
+  }
+  .imagenColecciones h2 {
+    font-size: 1.7em;
+  }
+  .error404Texto h1 {
+    font-size: 4em;
+  }
+  .error404Texto h2 {
+    font-size: 2em;
+  }
+  .error404Texto h3 {
+    font-size: 1.7em;
+  }
+  .error404Texto a {
+    font-size: 1.5em;
+    padding: 8px;
+  }
+}
+.error404Page {
+  padding: 0;
+  margin-top: 100px !important;
+}
+
+.error404Image img {
+  width: 80vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.error404Texto {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.error404Texto h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #ff8c00;
+}
+.error404Texto h2 {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: orange;
+}
+.error404Texto h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.9725490196);
+}
+.error404Texto a {
+  border-radius: 10px;
+  background-color: orange;
+  border: 4px solid #ff8c00;
+  color: rgba(255, 255, 255, 0.9607843137);
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+}
+.error404Texto a:hover {
+  background-color: #ff8c00;
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=main.css.map */
