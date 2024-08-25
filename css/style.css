@@ -262,7 +262,14 @@ h2 {
     }
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+
+    .menu {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+}
 
 @media (min-width: 767px) {
 
@@ -274,7 +281,6 @@ h2 {
         margin-top: 50px;
         font-size: 2em;
     }
-    
     
     .textoIndexInfo {
         color: black;
@@ -294,23 +300,6 @@ h2 {
         margin-left: auto;
         padding-bottom: 0px;
     }
-
-    .caribeInicio video {
-        object-fit: initial;
-        width: 70%;
-        height: auto;
-    }
-
-    .imagenCentral p {
-        font-size: 0.9em;
-    }
-
-    .textoAlMedio {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-    }
-
 }
 
 @media (min-width: 992px) {
@@ -319,7 +308,7 @@ h2 {
     /* Cambia Menu del Nav de vertical a horizontal */
     .menu {
         display: inline-block;
-        margin-right: 600px;
+        margin-right: 100px;
     }
 
     .error404Page {
