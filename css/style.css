@@ -98,7 +98,6 @@ h2 {
     font-size: 1.5em;
 }
 
-
 .textoIndexInfo {
     color: black;
     font-weight: 400;
@@ -112,6 +111,83 @@ h2 {
 .imagenesIndex {
     background-color: white;
     display: inline;
+}
+
+.cardsh1-title {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.cardAreas {
+    /* Card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px !important;
+}
+
+.cardAreas img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: .8;
+    height: 75px;
+    width: auto;
+}
+
+.cardAreas img:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.cardAreas h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+}
+
+.cardAreas h4 {
+    font-weight: bold;
+    font-size: .9em;
+    font-weight: 100;
+    color: white;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+.form-format {
+    font-size: 16px;
+    border-width: 0px;
+    border-bottom: 2px #484b4e solid;
+    width: 40vw;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.form-format:hover {
+    border-bottom: 2px black solid;
+    transition: 0.5s;
+}
+
+.form-format:focus {
+    outline: none;
+    resize: none;
+}
+
+.botonContacto {
+    width: 300px;
+    height: 50px;
+    background-color: #484b4e;
+    color: rgba(255, 255, 255, 0.9607843137);
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.botonContacto:hover {
+    background-color: black;
+    transition: 0.5s;
 }
 
 .footer {
@@ -222,7 +298,7 @@ h2 {
 }
 
 @media (min-width: 401px) {
-    
+
     .menu li {
         padding-top: 10px;
     }
@@ -282,7 +358,7 @@ h2 {
         margin-top: 50px;
         font-size: 2em;
     }
-    
+
     .textoIndexInfo {
         color: black;
         font-weight: 400;
