@@ -27,8 +27,8 @@ h2 {
 
 .logoNav {
     display: inline-block;
-    width: 292px;
-    height: 73px;
+    width: 240px;
+    height: 60px;
     margin-left: 10px;
 }
 
@@ -371,12 +371,7 @@ h2 {
         visibility: visible !important;
         display: block;
     }
-
-    .imagenesIndex {
-        /*Contenedor de los divs*/
-        width: 100%;
-    }
-
+    
     .footer p {
         font-size: 1.2em;
     }
@@ -395,6 +390,11 @@ h2 {
 }
 
 @media (min-width: 576px) {
+
+    .logoNav {
+        width: 292px;
+        height: 73px;
+    }
 
     .navbar-toggler {
         margin: 20px;
