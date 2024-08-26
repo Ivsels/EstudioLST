@@ -6,11 +6,6 @@
     font-family: "Baskervville SC", sans-serif;
 }
 
-h1,
-h2 {
-    font-weight: bold;
-}
-
 .headerNav {
     background-color: red;
 }
@@ -27,8 +22,8 @@ h2 {
 
 .logoNav {
     display: inline-block;
-    width: 240px;
-    height: 60px;
+    width: 200px;
+    height: 50px;
     margin-left: 10px;
 }
 
@@ -89,13 +84,20 @@ h2 {
     border: none;
 }
 
+.imageCarousel {
+    margin-top: 75px;
+    filter: grayscale(10%);
+    opacity: 0.8;
+    width: 100%;
+}
+
 .textoIndexTitulo {
     color: black;
     font-weight: 700;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
 .textoIndexInfo {
@@ -111,11 +113,10 @@ h2 {
 .cardsh1-title {
     margin-top: 40px;
     margin-bottom: 30px;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .cardAreas {
-    /* Card */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,12 +153,13 @@ h2 {
 }
 
 .form-format {
-    font-size: 16px;
+    font-size: 14px;
     border-width: 0px;
     border-bottom: 2px #484b4e solid;
     width: 40vw;
     resize: none;
     margin-bottom: 20px;
+    font-family: sans-serif;
 }
 
 .form-format:hover {
@@ -188,6 +190,8 @@ h2 {
 .footer {
     background-color: #212529;
     font-weight: lighter;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .footer p {
@@ -216,6 +220,7 @@ h2 {
 .telMail p {
     display: inline-block;
     margin: 5px;
+    font-family: sans-serif;
 }
 
 .telefono {
@@ -230,6 +235,11 @@ h2 {
     flex-direction: row;
     align-items: center;
     justify-content: initial;
+    font-family: sans-serif;
+}
+
+.derechos-font p {
+    font-family: sans-serif;
 }
 
 .logoFooter {
@@ -266,14 +276,6 @@ h2 {
 .visiblePc {
     visibility: hidden;
     display: none;
-}
-
-.imageCarousel {
-    filter: grayscale(10%);
-    opacity: 0.8;
-    object-fit: contain;
-    object-position: bottom;
-    height: 60vh;
 }
 
 .carousel-caption {
@@ -352,7 +354,12 @@ h2 {
     transition: 0.3s;
 }
 
-@media (min-width: 401px) {
+@media (min-width: 359px) {
+
+    .logoNav {
+        width: 240px;
+        height: 60px;
+    }
 
     .menu li {
         padding-top: 10px;
@@ -360,6 +367,10 @@ h2 {
 
     .menu li a {
         padding: 10px;
+    }
+
+    .imageCarousel {
+        margin-top: 85px;
     }
 
     .visibleCelular {
@@ -371,22 +382,8 @@ h2 {
         visibility: visible !important;
         display: block;
     }
-    
-    .footer p {
-        font-size: 1.2em;
-    }
 
-    .telMail p {
-        font-size: 1em;
-    }
 
-    .logoFooter {
-        align-items: center;
-    }
-
-    .iconosFooter p {
-        font-size: 1em;
-    }
 }
 
 @media (min-width: 576px) {
@@ -405,39 +402,58 @@ h2 {
         margin-right: 20px;
     }
 
+    .form-contact {
+        margin-left: 50px;
+    }
+
 }
 
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 991px) {
 
-    .imageCarousel {
-        width: 100vw;
-        height: auto;
-        object-fit:fill;
-        object-position: center;
-        }
+    .navbar-collapse {
+        position: absolute;
+        top: 100px; /* Ajusta según necesites */
+        right: 0;
+        width: 30%; /* Ajusta el ancho a tu preferencia */
+        background-color: #212529; /* Asegúrate de que coincida con el fondo del menú */
+        box-shadow: 5px 0px 7px white; /* Mantén la sombra o ajústala según prefieras */
+    }
+
+    .menu {
+        width: auto;
+        align-self:flex-end;
+        display: flex;
+    }
+
+    .menu li {
+        align-self: flex-end;
+    }
+
+    .elementoMenu {
+        display:inline-block;
+        /* Asegura que los elementos sean bloques y no se alineen en fila */
+    }
 
     .textoIndexTitulo {
-        color: black;
-        font-weight: 700;
-        margin-left: 150px;
-        margin-right: 150px;
+        margin-left: 50px;
+        margin-right: 50px;
         margin-top: 50px;
         font-size: 2em;
     }
 
     .textoIndexInfo {
-        color: black;
-        font-weight: 400;
-        margin-left: 150px;
-        margin-right: 150px;
-        margin-bottom: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
         font-size: 1.1em;
-        font-family: sans-serif;
     }
 
-    /* Tables */
+    /* Tablets */
     .footer div {
         align-items: normal;
+    }
+
+    .iconosFooter {
+        padding-left: 100px;
     }
 
     .logoFooter {
@@ -448,12 +464,35 @@ h2 {
 
 @media (min-width: 992px) {
 
+    .navDiv {
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+        position: fixed;
+        display: block;
+        width: 100%;
+        box-shadow: 5px 0px 7px white;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        justify-content: center;
+        list-style: none;
+        background-color: #212529;
+        margin-left: auto;
+    }
+    
+    .menu li {
+        font-weight: bold;
+        font-size: 1.0em;
+        text-transform: uppercase;
+    }
+    
     /* PC y otras */
     /* Cambia Menu del Nav de vertical a horizontal */
-    .menu {
-        display: inline-block;
-        margin-right: 100px;
-    }
+
 
     .error404Page {
         margin-top: 120px;
