@@ -6,11 +6,6 @@
     font-family: "Baskervville SC", sans-serif;
 }
 
-body {
-    overflow-x: hidden;
-}
-
-
 .headerNav {
     background-color: red;
 }
@@ -116,9 +111,10 @@ body {
 }
 
 .cardsh1-title {
-    margin-top: 40px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom: 20px;
     font-size: 1.8em;
+    font-weight: 600;
 }
 
 .cardAreas {
@@ -134,7 +130,6 @@ body {
     margin-bottom: 20px;
     opacity: .8;
     height: 75px;
-    width: auto;
 }
 
 .cardAreas img:hover {
@@ -425,11 +420,6 @@ body {
         margin: 20px;
     }
 
-    .menu {
-        display: inline-block;
-        margin-right: 20px;
-    }
-
     .form-contact {
         margin-left: 50px;
     }
@@ -441,14 +431,10 @@ body {
     .navbar-collapse {
         position: absolute;
         top: 100px;
-        /* Ajusta según necesites */
         right: 0;
         width: 30%;
-        /* Ajusta el ancho a tu preferencia */
         background-color: #212529;
-        /* Asegúrate de que coincida con el fondo del menú */
         box-shadow: 5px 0px 7px white;
-        /* Mantén la sombra o ajústala según prefieras */
     }
 
     .menu {
@@ -463,7 +449,6 @@ body {
 
     .elementoMenu {
         display: inline-block;
-        /* Asegura que los elementos sean bloques y no se alineen en fila */
     }
 
     .textoIndexTitulo {
@@ -479,7 +464,6 @@ body {
         font-size: 1.1em;
     }
 
-    /* Tablets */
     .footer div {
         align-items: normal;
     }
@@ -496,32 +480,6 @@ body {
 
 @media (min-width: 992px) {
 
-    .navDiv {
-        top: 0px;
-        left: 0px;
-        z-index: 10;
-        position: fixed;
-        display: block;
-        width: 100%;
-        box-shadow: 5px 0px 7px white;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column;
-        align-items: initial;
-        justify-content: center;
-        list-style: none;
-        background-color: #212529;
-        margin-left: auto;
-    }
-
-    .menu li {
-        font-weight: bold;
-        font-size: 1.0em;
-        text-transform: uppercase;
-    }
-
     .textoIndexTitulo {
         margin-left: 150px;
         margin-right: 150px;
@@ -536,7 +494,6 @@ body {
         font-size: 1.1em;
         font-family: sans-serif;
     }
-
 
     .areas-trabajo {
         padding-left: 50px;
@@ -561,35 +518,5 @@ body {
     .error404Texto {
         padding-top: 0px;
         padding-bottom: 0px;
-    }
-}
-
-@media (min-width: 1100px) {
-
-    /* PC y otras */
-    .footer div {
-        align-items: normal;
-    }
-
-    .logoFooter {
-        margin-left: auto;
-        padding-bottom: 0px;
-    }
-
-    .error404Texto h1 {
-        font-size: 4em;
-    }
-
-    .error404Texto h2 {
-        font-size: 2em;
-    }
-
-    .error404Texto h3 {
-        font-size: 1.7em;
-    }
-
-    .error404Texto a {
-        font-size: 1.5em;
-        padding: 8px;
     }
 }
