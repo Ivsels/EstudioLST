@@ -6,6 +6,11 @@
     font-family: "Baskervville SC", sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+
 .headerNav {
     background-color: red;
 }
@@ -354,6 +359,25 @@
     transition: 0.3s;
 }
 
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
 @media (min-width: 359px) {
 
     .logoNav {
@@ -367,6 +391,10 @@
 
     .menu li a {
         padding: 10px;
+    }
+
+    .footer p {
+        font-size: 1.2em;
     }
 
     .imageCarousel {
@@ -412,16 +440,20 @@
 
     .navbar-collapse {
         position: absolute;
-        top: 100px; /* Ajusta según necesites */
+        top: 100px;
+        /* Ajusta según necesites */
         right: 0;
-        width: 30%; /* Ajusta el ancho a tu preferencia */
-        background-color: #212529; /* Asegúrate de que coincida con el fondo del menú */
-        box-shadow: 5px 0px 7px white; /* Mantén la sombra o ajústala según prefieras */
+        width: 30%;
+        /* Ajusta el ancho a tu preferencia */
+        background-color: #212529;
+        /* Asegúrate de que coincida con el fondo del menú */
+        box-shadow: 5px 0px 7px white;
+        /* Mantén la sombra o ajústala según prefieras */
     }
 
     .menu {
         width: auto;
-        align-self:flex-end;
+        align-self: flex-end;
         display: flex;
     }
 
@@ -430,7 +462,7 @@
     }
 
     .elementoMenu {
-        display:inline-block;
+        display: inline-block;
         /* Asegura que los elementos sean bloques y no se alineen en fila */
     }
 
@@ -473,7 +505,7 @@
         width: 100%;
         box-shadow: 5px 0px 7px white;
     }
-    
+
     .menu {
         display: flex;
         flex-direction: column;
@@ -483,16 +515,38 @@
         background-color: #212529;
         margin-left: auto;
     }
-    
+
     .menu li {
         font-weight: bold;
         font-size: 1.0em;
         text-transform: uppercase;
     }
-    
-    /* PC y otras */
-    /* Cambia Menu del Nav de vertical a horizontal */
 
+    .textoIndexTitulo {
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 20px;
+        font-size: 2em;
+    }
+
+    .textoIndexInfo {
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-bottom: 20px;
+        font-size: 1.1em;
+        font-family: sans-serif;
+    }
+
+
+    .areas-trabajo {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 30px;
+    }
+
+    .footer p {
+        font-size: 1em;
+    }
 
     .error404Page {
         margin-top: 120px;
