@@ -6,6 +6,10 @@
     font-family: "Baskervville SC", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .headerNav {
     background-color: red;
 }
