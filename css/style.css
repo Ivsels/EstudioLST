@@ -79,8 +79,8 @@
 
 .navbar-toggler {
     margin: 10px;
-    color: white;
-    background-color: white;
+    color: #f7f7f7;
+    background-color: #f7f7f7;
     border: none;
 }
 
@@ -196,7 +196,7 @@
 
 .footer p {
     color: rgba(255, 255, 255, 0.9607843137);
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 .footer div {
@@ -373,6 +373,71 @@
     margin-top: 16px;
 }
 
+.equipo{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.equipo h1{
+    font-weight: 800;
+    font-size: 1.5em;
+    margin: 100px 0px 0px 0px;
+}
+
+.cardEquipo{
+    margin: 30px 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardEquipo img{
+    width: 80vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cardEquipo div{
+    width: 80vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+.equipo-rol{
+    font-size: 0.8em;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #f7f7f7;
+    margin: 0px;
+    padding: 15px 0px 0px 0px;
+}
+
+.equipo-nombre{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #f7f7f7;
+    margin: 10px 0px 20px 0px;
+    padding: 0px;
+}
+
+.equipo-tel{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #f7f7f7;
+    margin: 0px;
+    padding: 0px;
+}
+
+.equipo-mail{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #f7f7f7;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+}
+
 @media (min-width: 359px) {
 
     .logoNav {
@@ -476,6 +541,40 @@
         margin-left: auto;
         padding-bottom: 0px;
     }
+
+    .equipo{
+        padding-top: 40px;
+    }
+    
+    .equipo h1{
+        font-weight: 1000;
+        font-size: 1.8em;
+        margin: 100px 0px 0px 0px;
+    }
+    
+    .cardEquipo img{
+        width: 40vw;
+    }
+    
+    .cardEquipo div{
+        width: 40vw;
+    }
+    
+    .equipo-rol{
+        font-size: 1em;
+    }
+    
+    .equipo-nombre{
+        font-size: 1.4em;
+    }
+    
+    .equipo-tel{
+        font-size: 1.1em;
+    }
+    
+    .equipo-mail{
+        font-size: 1.1em;
+    }
 }
 
 @media (min-width: 992px) {
@@ -518,5 +617,45 @@
     .error404Texto {
         padding-top: 0px;
         padding-bottom: 0px;
+    }
+
+    .equipo{
+        padding-top: 20px;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    
+    .equipo h1{
+        font-size: 1.8em;
+        margin-top: 130px;
+        margin-bottom: 30px;
+    }
+
+    .cardEquipo{
+        margin: 30px 0px;
+    }
+    
+    .cardEquipo img{
+        width: 25vw;
+    }
+    
+    .cardEquipo div{
+        width: 25vw;
+    }
+    
+    .equipo-rol{
+        font-size: 1em;
+    }
+    
+    .equipo-nombre{
+        font-size: 1.4em;
+    }
+    
+    .equipo-tel{
+        font-size: 1.1em;
+    }
+    
+    .equipo-mail{
+        font-size: 1.1em;
     }
 }
