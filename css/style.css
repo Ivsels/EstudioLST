@@ -377,37 +377,37 @@ a {
     margin-top: 16px;
 }
 
-.equipo{
+.equipo {
     padding-top: 20px;
     text-align: center;
 }
 
-.equipo h1{
+.equipo h1 {
     font-weight: 800;
     font-size: 1.5em;
     margin: 100px 0px 0px 0px;
 }
 
-.cardEquipo{
+.cardEquipo {
     margin: 30px 0px;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-.cardEquipo img{
+.cardEquipo img {
     width: 80vw;
     margin: 0px;
     padding: 0px;
 }
 
-.cardEquipo div{
+.cardEquipo div {
     width: 80vw;
     margin: 0px;
     padding: 0px;
 }
 
-.equipo-rol{
+.equipo-rol {
     font-size: 0.8em;
     font-family: sans-serif;
     font-weight: 700;
@@ -416,7 +416,7 @@ a {
     padding: 15px 0px 0px 0px;
 }
 
-.equipo-nombre{
+.equipo-nombre {
     font-size: 1.2em;
     font-weight: 600;
     color: #f7f7f7;
@@ -424,7 +424,7 @@ a {
     padding: 0px;
 }
 
-.equipo-tel{
+.equipo-tel {
     font-size: 0.9em;
     font-family: sans-serif;
     font-weight: 100;
@@ -433,7 +433,7 @@ a {
     padding: 0px;
 }
 
-.equipo-mail{
+.equipo-mail {
     font-size: 0.9em;
     font-family: sans-serif;
     font-weight: 100;
@@ -477,7 +477,8 @@ form label {
     margin-bottom: 15px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     margin-bottom: 10px;
     font-size: 1em;
     display: block;
@@ -494,7 +495,7 @@ form input, form textarea {
     font-weight: 600;
 }
 
-.form-button:hover{
+.form-button:hover {
     background-color: #0f0f0f;
 }
 
@@ -503,14 +504,14 @@ form input, form textarea {
     width: 90vw;
 }
 
-.map-container h1{
+.map-container h1 {
     font-weight: 600;
     margin-bottom: 20px;
     padding: 0px;
     align-self: center;
 }
 
-.form-textarea{
+.form-textarea {
     height: 25vh;
 }
 
@@ -618,60 +619,61 @@ form input, form textarea {
         padding-bottom: 0px;
     }
 
-    .equipo{
+    .equipo {
         padding-top: 40px;
     }
-    
-    .equipo h1{
+
+    .equipo h1 {
         font-weight: 1000;
         font-size: 1.8em;
         margin: 100px 0px 0px 0px;
     }
-    
-    .cardEquipo img{
+
+    .cardEquipo img {
         width: 40vw;
     }
-    
-    .cardEquipo div{
+
+    .cardEquipo div {
         width: 40vw;
     }
-    
-    .equipo-rol{
+
+    .equipo-rol {
         font-size: 1em;
     }
-    
-    .equipo-nombre{
+
+    .equipo-nombre {
         font-size: 1.4em;
     }
-    
-    .equipo-tel{
+
+    .equipo-tel {
         font-size: 1.1em;
     }
-    
-    .equipo-mail{
+
+    .equipo-mail {
         font-size: 1.1em;
     }
 
     .contact-section {
         flex-direction: row;
     }
-    
+
     .contact-form {
         max-width: 50%;
     }
-    
+
     .map-container {
         max-width: 50%;
     }
-    
+
     .contact-main {
         padding-top: 22vh;
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 11vh;
     }
-    
-    form input, form textarea {
+
+    form input,
+    form textarea {
         display: inline;
         width: auto;
     }
@@ -680,7 +682,9 @@ form input, form textarea {
 
 @media (min-width: 992px) {
 
-    .menu{padding-right: 50px;}
+    .menu {
+        padding-right: 50px;
+    }
 
     .textoIndexTitulo {
         margin-left: 150px;
@@ -722,66 +726,67 @@ form input, form textarea {
         padding-bottom: 0px;
     }
 
-    .equipo{
+    .equipo {
         padding-top: 20px;
         padding-left: 120px;
         padding-right: 120px;
     }
-    
-    .equipo h1{
+
+    .equipo h1 {
         font-size: 1.8em;
         margin-top: 130px;
         margin-bottom: 30px;
     }
 
-    .cardEquipo{
+    .cardEquipo {
         margin: 30px 0px;
     }
-    
-    .cardEquipo img{
+
+    .cardEquipo img {
         width: 25vw;
     }
-    
-    .cardEquipo div{
+
+    .cardEquipo div {
         width: 25vw;
     }
-    
-    .equipo-rol{
+
+    .equipo-rol {
         font-size: 1em;
     }
-    
-    .equipo-nombre{
+
+    .equipo-nombre {
         font-size: 1.4em;
     }
-    
-    .equipo-tel{
+
+    .equipo-tel {
         font-size: 1.1em;
     }
-    
-    .equipo-mail{
+
+    .equipo-mail {
         font-size: 1.1em;
     }
 
     .contact-section {
         flex-direction: row;
     }
-    
+
     .contact-form {
         max-width: 50%;
     }
-    
+
     .map-container {
         max-width: 50%;
     }
-    
+
     .contact-main {
         padding-top: 120px;
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 20px;
     }
-    
-    form input, form textarea {
+
+    form input,
+    form textarea {
         display: inline;
         width: auto;
     }
