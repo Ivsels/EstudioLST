@@ -37,7 +37,7 @@
                             <a class="nav-link" href="./index.html">El Estudio</a>
                         </li>
                         <li class="nav-item elementoMenu">
-                            <a class="nav-link botonAqui" href="#">Equipo</a>
+                            <a class="nav-link" href="./equipo.html">Equipo</a>
                         </li>
                         <li class="nav-item elementoMenu">
                             <a class="nav-link" href="./index.html#ultparrafo">Areas de Práctica</a>
@@ -46,7 +46,7 @@
                             <a class="nav-link" href="./pages/error_404.html">Novedades</a>
                         </li>
                         <li class="nav-item elementoMenu">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                            <a class="nav-link botonAqui" href="#">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -54,72 +54,36 @@
         </div>
     </header>
 
-    <main>
-        <section class="equipo container-fluid bg-light w-100">
-            <h1>NUESTRO EQUIPO DE PROFESIONALES</h1>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-                <article class="cardEquipo col bg-light">
-                    <img src="./img/equipo/gaspar_aguirre.webp" alt="">
-                    <div class="row row-cols-1 bg-dark text-center">
-                        <p class="equipo-rol">ABOGADO</p>
-                        <p class="equipo-nombre">Dr. Emmanuel Luchetti</p>
-                        <a href="tel:1170955868"><p class="equipo-tel">+54 1130495593 </p></a>
-                        <a href="tel:1170955868"><p class="equipo-mail">eluchetti@LSTabogados.com.ar</p></a>
-                    </div>
-                </article>
-                <article class="cardEquipo col bg-light">
-                    <img src="./img/equipo/manuel_adrogue2.webp" alt="">
-                    <div class="row row-cols-1 bg-dark text-center">
-                        <p class="equipo-rol">ABOGADO</p>
-                        <p class="equipo-nombre">Dr. Jacobo Ivan Selser</p>
-                        <a href="tel:1170955868"><p class="equipo-tel">+54 1130495593 </p></a>
-                        <a href="tel:1170955868"><p class="equipo-mail">jselser@LSTabogados.com.ar</p></a>
-                    </div>
-                </article>
-                <article class="cardEquipo col bg-light">
-                    <img src="./img/equipo/oscar_aguilar_valdez.webp" alt="">
-                    <div class="row row-cols-1 bg-dark text-center">
-                        <p class="equipo-rol">ABOGADO</p>
-                        <p class="equipo-nombre">Dr. Alejandro Adrian Testa</p>
-                        <a href="tel:1170955868"><p class="equipo-tel">+54 1130495593 </p></a>
-                        <a href="tel:1170955868"><p class="equipo-mail">atesta@LSTabogados.com.ar</p></a>
-                    </div>
-                </article>
-                <article class="cardEquipo col bg-light">
-                    <img src="./img/equipo/segundo-alfonso.webp" alt="">
-                    <div class="row row-cols-1 bg-dark text-center">
-                        <p class="equipo-rol">ABOGADO</p>
-                        <p class="equipo-nombre">Dr. Jorge Mariscal</p>
-                        <a href="tel:1170955868"><p class="equipo-tel">+54 1130495593 </p></a>
-                        <a href="tel:1170955868"><p class="equipo-mail">jmariscal@LSTabogados.com.ar</p></a>
-                    </div>
-                </article>
-                <article class="cardEquipo col bg-light">
-                    <img src="./img/equipo/andrea_aguirre.webp" alt="">
-                    <div class="row row-cols-1 bg-dark text-center">
-                        <p class="equipo-rol">ABOGADO</p>
-                        <p class="equipo-nombre">Dra. Mariela Tropea</p>
-                        <a href="tel:1170955868"><p class="equipo-tel">+54 1130495593 </p></a>
-                        <a href="tel:1170955868"><p class="equipo-mail">mtropea@LSTabogados.com.ar</p></a>
-                    </div>
-                </article>
-                <article class="cardEquipo col bg-light">
-                    <img src="./img/equipo/tomas_allende.webp" alt="">
-                    <div class="row row-cols-1 bg-dark text-center">
-                        <p class="equipo-rol">ABOGADO</p>
-                        <p class="equipo-nombre">Dr. Alejandro Fino</p>
-                        <a href="tel:1170955868"><p class="equipo-tel">+54 1130495593 </p></a>
-                        <a href="tel:1170955868"><p class="equipo-mail">afino@LSTabogados.com.ar</p></a>
-                    </div>
-                </article>
 
+    <main class="contact-main">
+        <section class="contact-section">
+            <div class="contact-form">
+                <h1>Contacto</h1>
+                <form action="#" method="post">
+                    <label for="name">Nombre Completo:</label>
+                    <input type="text" id="name" name="name" required>
 
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Consulta:</label>
+                    <textarea class="form-textarea" id="message" name="message" required></textarea>
+
+                    <button class="form-button" type="submit">Enviar Consulta</button>
+                </form>
+            </div>
+
+            <div class="map-container">
+                <h1>Ubicación</h1>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7880771554015!2d-58.38905858477153!3d-34.605014465201106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf8b02f6ed%3A0x573d268a24516b5e!2sTucum%C3%A1n%201506%2C%20C1049AAP%20CABA%2C%20Argentina!5e0!3m2!1sen!2sus!4v1693069592531!5m2!1sen!2sus"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
         </section>
-
-
-
     </main>
-        
+
+
     <footer class="footer m-0">
         <div class="row m-0 justify-content-center">
             <div class="bloqueFooter telMail col-12 col-md-4 col-lg">
